@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MEDP 331 - Class Assignment 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Homepage for class assignment 2" />
+    <meta name="author" content="Kristy" />
+  </head>
+
+  <body>
+      <section>
+        <img style="margin-left: 40vw; margin-top:10vh;" src="https://i.pinimg.com/originals/09/30/65/09306586b11d8523d5955500a74a1a6b.gif" alt="A dancing pixelated burger.">
+        <p style="font-family: 'Courier New', Courier, monospace; text-align: center;">Credit to <a href="https://www.mozilla.org/">Ivan Dixon</a> for the GIF.</p>
+      </section>
+
+      <script type="text/javascript">
+        var link = document.querySelector('a');
+        link.textContent = 'Ivan Dixon';
+        link.href = 'https://www.ivandixon.com/';
+
+
+        // Creating first paragraph
+        var sect = document.querySelector('section'); //assign a variable to <section>
+        var para1 = document.createElement('p'); //create a new <p> element and assign it to a variable
+        para1.textContent = 'I am craving a burger.'; //add text to the new <p>
+        sect.appendChild(para1); //place the new paragraph in the <section>
+
+        // Styling first paragraph
+        var par1 = para1.style;
+        par1.color = '#fee861';
+        par1.backgroundColor = '#a64824';
+        par1.padding = '20px';
+        par1.width = '300px';
+        par1.borderRadius = '15px';
+        par1.borderStyle = 'outset';
+        par1.borderWidth = '10px';
+        par1.borderColor = '#f8c34e';
+        par1.textAlign = 'center';
+        par1.margin = 'auto';
+        par1.fontSize = '20px';
+        par1.fontFamily = "Courier New, monospace";
+        par1.fontWeight = 'bold';
+
+        // Creating second paragraph
+        var para2 = document.createElement('p');
+        para2.textContent = 'With lettuce, tomato, pickles, and cheese.';
+        sect.appendChild(para2);
+
+        // Styling second paragraph
+        var par2 = para2.style;
+        par2.color = '#02da37';
+        par2.backgroundColor = 'black';
+        par2.padding = '10px';
+        par2.width = '450px';
+        par2.borderRadius = '10px';
+        par2.borderStyle = 'dashed';
+        par2.borderColor = '#fe4d4e';
+        par2.marginTop = '5vh';
+        par2.textAlign = 'center';
+        par2.marginLeft = 'auto';
+        par2.marginRight = 'auto';
+        par2.fontSize = '15px';
+        par2.fontFamily = "Courier New, monospace";
+        par2.fontWeight = 'bold';
+
+        // Creating third paragraph
+        var para3 = document.createElement('p');
+        para3.textContent = 'No onions though.';
+        sect.appendChild(para3);
+
+        //Styling third paragraph
+        var par3 = para3.style;
+        par3.color = 'purple';
+        par3.fontFamily = "Courier New, monospace";
+        par3.textAlign = 'center';
+        par3.marginTop = '5vh';
+        par3.marginLeft = 'auto';
+        par3.marginRight = 'auto';
+        par3.fontWeight = 'bold';
+        par3.textDecoration = 'underline';
+        par3.textDecorationColor = 'purple';
+
+        // Styling background
+        document.body.style.background = "#fee861";
+        
+
+      </script>
+  </body>
+</html>
